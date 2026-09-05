@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+<title>งูเรืองแสง — Night Garden Snake</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div class="card">
+    <header>
+      <h1>🎮 🌙งูเรืองแสง🚴<span>NIGHT GARDEN SNAKE</span></h1>
+      <div class="stats">
+        <div class="stat">
+          <div class="label">คะแนน</div>
+          <div class="value" id="scoreVal">0</div>
+        </div>
+        <div class="stat">
+          <div class="label">สูงสุด</div>
+          <div class="value" id="bestVal">0</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"></canvas>
+
+      <div class="overlay start" id="startOverlay">
+        <h2>พร้อมลุยหรือยัง?</h2>
+        <p>ใช้ปุ่มลูกศรหรือปัดนิ้วเพื่อบังคับงู กินผลไม้เรืองแสงให้ได้มากที่สุด</p>
+        <button class="primary" id="startBtn">เริ่มเกม</button>
+      </div>
+
+      <div class="overlay gameover hidden" id="overOverlay">
+        <h2>จบเกม</h2>
+        <p id="overScoreText">คะแนนของคุณ: 0</p>
+        <button class="primary" id="restartBtn">เล่นอีกครั้ง</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="hint">↑ ↓ ← → บังคับทิศทาง · Space หยุดชั่วคราว</div>
+      <div class="pad">
+        <button id="padUp">↑</button>
+        <button id="padLeft">←</button>
+        <button id="padDown">↓</button>
+        <button id="padRight">→</button>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
