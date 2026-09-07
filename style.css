@@ -177,8 +177,8 @@ footer {
 
 .pad {
   display: grid;
-  grid-template-columns: repeat(3, 34px);
-  grid-template-rows: repeat(2, 34px);
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(2, 50px);
   gap: 5px;
 }
 
