@@ -38,7 +38,7 @@
     direction = { x: 1, y: 0 };
     nextDirection = { x: 1, y: 0 };
     score = 0;
-    moveInterval = 130;
+    moveInterval = 170;
     acc = 0;
     pulseT = 0;
     paused = false;
@@ -83,7 +83,7 @@
       score += 1;
       scoreEl.textContent = score;
       food = placeFood();
-      moveInterval = Math.max(70, 130 - score * 3);
+      moveInterval = Math.max(130, 170 - score * 2);
     } else {
       snake.pop();
     }
